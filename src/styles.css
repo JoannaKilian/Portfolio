@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-background: rgba(38, 38, 38, 0.93);
+  --color: #f1ccc4;
+}
+
+body {
+  font-family: "Indie Flower", cursive;
+  color: var(--color);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.741);
+}
