@@ -11,6 +11,7 @@ import { SkillsComponent } from "./skills/skills.component";
 import { ProjectsComponent } from "./projects/projects.component";
 import { ContactComponent } from "./contact/contact.component";
 import { StartComponent } from './start/start.component';
+import { SharpComponent } from './sharp/sharp.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { StartComponent } from './start/start.component';
     ProjectsComponent,
     ContactComponent,
     StartComponent,
+    SharpComponent,
   ],
   imports: [BrowserModule],
   providers: [],

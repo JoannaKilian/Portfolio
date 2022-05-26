@@ -1,0 +1,46 @@
+div.clouds,
+div.clouds::before,
+div.clouds::after {
+  width: 210px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, 0%);
+  border-radius: 40%;
+  transform: rotate(0deg);
+}
+div.clouds {
+  background-color: #fdad31;
+  animation: clouds 33s linear infinite;
+}
+
+div.clouds::before {
+  top: 0%;
+  left: -0%;
+  content: "";
+  background-color: #fdad31;
+  animation: clouds 29s linear infinite;
+}
+
+div.clouds::after {
+  top: 0%;
+  left: 0%;
+  content: "";
+  background-color: #fdad31;
+  animation: clouds 20s alternate linear infinite;
+}
+
+@keyframes clouds {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+div.clouds:hover {
+  width: 100px;
+  height: 100px;
+}

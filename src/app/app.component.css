@@ -1,7 +1,5 @@
 .wrap {
-  position: relative;
-  /* width: 900px; */
   min-width: 300px;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
