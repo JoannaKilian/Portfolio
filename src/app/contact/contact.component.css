@@ -1,0 +1,63 @@
+.contactWrap {
+  position: relative;
+  overflow: hidden;
+  height: 40vh;
+  position: relative;
+  background-color: var(--color);
+  text-align: center;
+}
+
+.contactData {
+  position: absolute;
+  color: #fff;
+  right: 0;
+  bottom: 0;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-align: right;
+  margin: 20px;
+  margin-right: 40px;
+  z-index: 1;
+}
+
+div.clouds,
+div.clouds::before,
+div.clouds::after {
+  width: 250vw;
+  height: 250vw;
+  position: absolute;
+  top: 40%;
+  left: -45%;
+  transform: translate(-50%, 0%);
+  border-radius: 45%;
+  transform: rotate(0deg);
+}
+div.clouds {
+  background-color: #494d9ff5;
+  animation: clouds 23s linear infinite both;
+}
+
+div.clouds::before {
+  top: 0%;
+  left: 0%;
+  content: "";
+  background-color: #494d9ff6;
+  animation: clouds 29s linear infinite both;
+}
+
+div.clouds::after {
+  top: 0%;
+  left: 0%;
+  content: "";
+  background-color: #494d9fdc;
+  animation: clouds 46s linear infinite both;
+}
+
+@keyframes clouds {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

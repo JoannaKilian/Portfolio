@@ -1,0 +1,31 @@
+.wrapAbout {
+  background-color: var(--color-background);
+  padding: 30px;
+}
+.flexAbout {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  top: -30px;
+}
+.education,
+.experience,
+.me {
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  height: 200px;
+  position: relative;
+}
+.educationIn,
+.experienceIn,
+.meIn {
+  position: absolute;
+  left: 0;
+  top: -120px;
+  background-color: #fff;
+  padding: 10px;
+  height: 200px;
+  box-shadow: 0px 3px 30px 4px #191b3a;
+}
