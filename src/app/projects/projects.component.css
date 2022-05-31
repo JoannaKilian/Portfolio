@@ -2,34 +2,26 @@
   position: relative;
   background-color: var(--color);
   min-height: 100vh;
+  padding-bottom: 80px;
 }
 
 .wrapAbout .headerAbout p {
   position: absolute;
-  top: -103px;
-  font-size: 7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -56px;
+  font-size: 3.8rem;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   color: var(--color);
-}
-.wrapAbout .headerAbout p:last-child {
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 7rem;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--color-background);
 }
 .wrapPortfolio {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding-top: 200px;
+  padding-top: 50px;
 }
 .project {
   position: relative;
@@ -39,9 +31,10 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 .project img {
-  width: 200px;
+  width: 220px;
 }
 .portfolioIn {
   position: absolute;
@@ -52,6 +45,32 @@
   flex-direction: column;
   padding: 10px;
   text-align: center;
+  color: #444;
+}
+.portfolioIn p {
+  width: 220px;
+}
+.portfolioIn a {
+  position: relative;
+  text-decoration: none;
+  margin-top: 5px;
+  color: #444;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.portfolioIn a:hover {
+  font-size: 1.1rem;
+}
+.portfolioIn a::before {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #444;
+  box-shadow: 0px 2px 5px 1px #444;
 }
 
 /* sharp */
@@ -98,5 +117,11 @@ div.clouds::after {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@media (min-width: 600px) {
+  .wrapAbout .headerAbout p {
+    top: -108px;
+    font-size: 7.5rem;
   }
 }

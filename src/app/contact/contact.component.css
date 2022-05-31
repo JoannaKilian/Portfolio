@@ -1,23 +1,47 @@
 .contactWrap {
   position: relative;
-  overflow: hidden;
-  height: 40vh;
+  height: calc(100vh - 80px);
   position: relative;
   background-color: var(--color);
   text-align: center;
 }
 
+.contactWrap .headerAbout p {
+  position: absolute;
+  top: -40px;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color);
+  margin-left: 5px;
+}
+.contactWrap .headerAbout p:last-child {
+  position: absolute;
+  top: 0px;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-background);
+  margin-left: 5px;
+}
+
 .contactData {
   position: absolute;
-  color: #fff;
+  color: #000;
   right: 0;
   bottom: 0;
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   text-align: right;
   margin: 20px;
   margin-right: 40px;
   z-index: 1;
+}
+.contactData img {
+  width: 200px;
+  margin-bottom: 5px;
 }
 
 div.clouds,
@@ -33,7 +57,7 @@ div.clouds::after {
   transform: rotate(0deg);
 }
 div.clouds {
-  background-color: #494d9ff5;
+  background-color: #333333f5;
   animation: clouds 23s linear infinite both;
 }
 
@@ -41,7 +65,7 @@ div.clouds::before {
   top: 0%;
   left: 0%;
   content: "";
-  background-color: #494d9ff6;
+  background-color: #333333f6;
   animation: clouds 29s linear infinite both;
 }
 
@@ -49,7 +73,7 @@ div.clouds::after {
   top: 0%;
   left: 0%;
   content: "";
-  background-color: #494d9fdc;
+  background-color: #333333dc;
   animation: clouds 46s linear infinite both;
 }
 
@@ -59,5 +83,18 @@ div.clouds::after {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 600px) {
+  .contactWrap .headerAbout p {
+    top: -73px;
+    font-size: 5rem;
+  }
+  .contactWrap .headerAbout p:last-child {
+    font-size: 5rem;
+  }
+  .contactData {
+    font-size: 1.6rem;
   }
 }

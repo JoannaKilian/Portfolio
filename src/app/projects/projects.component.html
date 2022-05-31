@@ -1,53 +1,21 @@
 <div class="wrapAbout">
   <div class="headerAbout">
-    <p>We can work</p>
-    <p>together</p>
+    <p>Portfolio</p>
   </div>
   <div class="wrapPortfolio">
-    <div class="project">
-      <div class="clouds"></div>
-      <div class="portfolioIn">
-        <img src="../../assets/monitor-g9014af5ed_1280.png" alt="" />
-        <h3>Game</h3>
-        <p>Lorem ipsum cupiditate veritatis velit? Placeat!</p>
-        <a href="#">Demo</a>
+    <ng-container *ngFor="let item of projects; let i = index">
+      <div class="project">
+        <div class="clouds"></div>
+        <div class="portfolioIn">
+          <img
+            src="../../assets/doPortfolio/{{ i + 1 }}.PNG"
+            alt="{{ projects[i].title }}"
+          />
+          <h3>{{ projects[i].title }}</h3>
+          <p>{{ projects[i].description }}</p>
+          <a href="{{ projects[i].href }}">{{ projects[i].link }}</a>
+        </div>
       </div>
-    </div>
-    <div class="project">
-      <div class="clouds"></div>
-      <div class="portfolioIn">
-        <img src="../../assets/monitor-g9014af5ed_1280.png" alt="" />
-        <h3>Game</h3>
-        <p>Lorem ipsum cupiditate veritatis velit? Placeat!</p>
-        <a href="#">Demo</a>
-      </div>
-    </div>
-    <div class="project">
-      <div class="clouds"></div>
-      <div class="portfolioIn">
-        <img src="../../assets/monitor-g9014af5ed_1280.png" alt="" />
-        <h3>Game</h3>
-        <p>Lorem ipsum cupiditate veritatis velit? Placeat!</p>
-        <a href="#">Demo</a>
-      </div>
-    </div>
-    <div class="project">
-      <div class="clouds"></div>
-      <div class="portfolioIn">
-        <img src="../../assets/monitor-g9014af5ed_1280.png" alt="" />
-        <h3>Game</h3>
-        <p>Lorem ipsum cupiditate veritatis velit? Placeat!</p>
-        <a href="#">Demo</a>
-      </div>
-    </div>
-    <div class="project">
-      <div class="clouds"></div>
-      <div class="portfolioIn">
-        <img src="../../assets/monitor-g9014af5ed_1280.png" alt="" />
-        <h3>Game</h3>
-        <p>Lorem ipsum cupiditate veritatis velit? Placeat!</p>
-        <a href="#">Demo</a>
-      </div>
-    </div>
+    </ng-container>
   </div>
 </div>

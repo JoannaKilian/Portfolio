@@ -23,9 +23,6 @@ div.clouds::before {
   background-color: var(--color);
   animation: clouds 19s linear infinite;
 }
-div.clouds::before {
-  box-shadow: 1px 1px 5px 1px #fdab3165;
-}
 
 div.clouds::after {
   top: 0%;
