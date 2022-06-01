@@ -42,8 +42,12 @@
 .contactData img {
   width: 200px;
   margin-bottom: 5px;
-  background-color: #eee;
+  background-color: rgba(238, 238, 238, 0.674);
   border-radius: 30px;
+  box-shadow: 4px 5px 6px 0px inset #000000f7;
+}
+.contactData img:hover {
+  box-shadow: 4px 5px 6px 0px #000000f7;
 }
 
 div.clouds,
