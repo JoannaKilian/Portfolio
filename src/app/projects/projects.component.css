@@ -125,3 +125,9 @@ div.clouds::after {
     font-size: 7.5rem;
   }
 }
+
+@media (max-width: 300px) {
+  .project img {
+    width: 200px;
+  }
+}
