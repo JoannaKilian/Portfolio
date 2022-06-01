@@ -29,7 +29,7 @@
 
 .contactData {
   position: absolute;
-  color: #000;
+  color: #eee;
   right: 0;
   bottom: 0;
   font-weight: 700;
@@ -42,6 +42,8 @@
 .contactData img {
   width: 200px;
   margin-bottom: 5px;
+  background-color: #eee;
+  border-radius: 30px;
 }
 
 div.clouds,
