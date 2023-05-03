@@ -1,14 +1,14 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
-import { AppComponent } from "./app.component";
-import { HeaderComponent } from "./header/header.component";
-import { AboutComponent } from "./about/about.component";
-import { SkillsComponent } from "./skills/skills.component";
-import { ProjectsComponent } from "./projects/projects.component";
-import { ContactComponent } from "./contact/contact.component";
-import { SharpComponent } from "./sharp/sharp.component";
-
+import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { AboutComponent } from './about/about.component';
+import { SkillsComponent } from './skills/skills.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ContactComponent } from './contact/contact.component';
+import { SharpComponent } from './sharp/sharp.component';
+import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +19,7 @@ import { SharpComponent } from "./sharp/sharp.component";
     ContactComponent,
     SharpComponent,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, MatIconModule],
   providers: [],
   bootstrap: [AppComponent],
 })
