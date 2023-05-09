@@ -22,6 +22,8 @@
   justify-content: space-around;
   align-items: center;
   padding-top: 50px;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 .project {
   position: relative;
@@ -31,10 +33,11 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin: 30px;
 }
 .project img {
   width: 220px;
+  margin-top: 15px;
 }
 .portfolioIn {
   position: absolute;
@@ -48,19 +51,18 @@
   color: #444;
 }
 .portfolioIn p {
-  width: 220px;
+  width: 230px;
 }
 .portfolioIn a {
   position: relative;
   text-decoration: none;
   margin-top: 5px;
   color: #444;
-  text-transform: uppercase;
   font-weight: 700;
   font-size: 0.9rem;
 }
 .portfolioIn a:hover {
-  font-size: 1.1rem;
+  text-transform: uppercase;
 }
 .portfolioIn a::before {
   position: absolute;
@@ -70,7 +72,6 @@
   width: 100%;
   height: 2px;
   background-color: #444;
-  box-shadow: 0px 2px 5px 1px #444;
 }
 
 /* sharp */
@@ -78,34 +79,31 @@
 div.clouds,
 div.clouds::before,
 div.clouds::after {
-  width: 340px;
-  height: 320px;
+  width: 360px;
+  height: 340px;
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%) rotate(0deg);
   border-radius: 50%;
-  transform: rotate(0deg);
 }
-div.clouds::before {
-  box-shadow: 2px 2px 4px 2.5px #191b3a57;
-}
+
 div.clouds {
   background-color: #fff;
   animation: clouds 13s linear infinite;
 }
 
 div.clouds::before {
-  top: 0%;
-  left: -0%;
+  top: 0;
+  left: -0;
   content: "";
   background-color: #fff;
   animation: clouds 29s linear infinite;
 }
 
 div.clouds::after {
-  top: 0%;
-  left: 0%;
+  top: 0;
+  left: 0;
   content: "";
   background-color: #fff;
   animation: clouds 20s reverse linear infinite;

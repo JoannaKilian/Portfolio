@@ -1,7 +1,6 @@
 .contactWrap {
   position: relative;
   height: calc(100vh - 80px);
-  position: relative;
   background-color: var(--color);
   text-align: center;
 }
@@ -18,7 +17,7 @@
 }
 .contactWrap .headerAbout p:last-child {
   position: absolute;
-  top: 0px;
+  top: 0;
   font-size: 3rem;
   font-weight: 700;
   text-align: center;
@@ -44,10 +43,10 @@
   margin-bottom: 5px;
   background-color: rgba(238, 238, 238, 0.674);
   border-radius: 30px;
-  box-shadow: 4px 5px 6px 0px inset #000000f7;
+  box-shadow: 4px 5px 6px 0 inset #000000f7;
 }
-.contactData img:hover {
-  box-shadow: 4px 5px 6px 0px #000000f7;
+.contactData img:active {
+  box-shadow: 4px 5px 6px 0 #000000f7;
 }
 
 div.clouds,
@@ -58,9 +57,8 @@ div.clouds::after {
   position: absolute;
   top: 40%;
   left: -45%;
-  transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%) rotate(0deg);
   border-radius: 45%;
-  transform: rotate(0deg);
 }
 div.clouds {
   background-color: #333333f5;
@@ -68,16 +66,16 @@ div.clouds {
 }
 
 div.clouds::before {
-  top: 0%;
-  left: 0%;
+  top: 0;
+  left: 0;
   content: "";
   background-color: #333333f6;
   animation: clouds 29s linear infinite both;
 }
 
 div.clouds::after {
-  top: 0%;
-  left: 0%;
+  top: 0;
+  left: 0;
   content: "";
   background-color: #333333dc;
   animation: clouds 46s linear infinite both;
@@ -101,7 +99,7 @@ div.clouds::after {
     font-size: 5rem;
   }
   .contactData {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 }
 @media (max-width: 350px) {

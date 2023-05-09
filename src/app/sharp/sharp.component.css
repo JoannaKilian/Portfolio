@@ -1,8 +1,8 @@
 div.clouds,
 div.clouds::before,
 div.clouds::after {
-  width: 210px;
-  height: 170px;
+  width: 230px;
+  height: 200px;
   position: absolute;
   top: 0;
   left: 0;
@@ -17,16 +17,16 @@ div.clouds {
 div.clouds::before {
   width: 210px;
   height: 210px;
-  top: 0%;
-  left: 0%;
+  top: 0;
+  left: 0;
   content: "";
   background-color: var(--color);
   animation: clouds 19s linear infinite;
 }
 
 div.clouds::after {
-  top: 0%;
-  left: 0%;
+  top: 0;
+  left: 0;
   content: "";
   background-color: var(--color);
   animation: clouds 10s reverse linear infinite;
